@@ -15,5 +15,8 @@ functions:
       - httpApi:
           path: /
           method: get
+    environment:
+       ACCESS_KEY: ${ssm:Selvam_Key}
+
 plugins:
   - serverless-offline
